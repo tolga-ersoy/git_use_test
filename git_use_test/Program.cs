@@ -32,8 +32,10 @@ app.MapGet("/weatherforecast", () =>
         return forecast;
     })
     .WithName("GetWeatherForecast");
-
+ 
 app.Run();
+int x = 0;
+x = 3;
 
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
 {
